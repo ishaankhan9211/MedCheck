@@ -1,0 +1,49 @@
+.page  { max-width: 820px; margin: 0 auto; }
+.hdr   { margin-bottom: 24px; }
+.title { font-size: 24px; font-weight: 600; letter-spacing: -.02em; margin-bottom: 4px; }
+.sub   { font-size: 13px; color: var(--text-2); }
+.req   { color: var(--danger); font-weight: 500; }
+
+.sectionNote { font-size: 13px; color: var(--text-2); margin-bottom: 14px; line-height: 1.6; }
+
+.navRow { display: flex; gap: 10px; margin-top: 8px; justify-content: flex-end; }
+
+.backBtn {
+  padding: 10px 20px; border-radius: var(--radius);
+  border: 1px solid var(--border-md); font-size: 14px; font-weight: 500;
+  color: var(--text-2); background: var(--surface);
+}
+.backBtn:hover { background: var(--surface2); color: var(--text); }
+
+.nextBtn {
+  padding: 10px 22px; border-radius: var(--radius);
+  background: var(--surface); border: 1px solid var(--border-md);
+  font-size: 14px; font-weight: 600; color: var(--text);
+}
+.nextBtn:hover { background: var(--surface2); }
+
+.analyzeBtn {
+  padding: 12px 28px; border-radius: var(--radius);
+  background: var(--accent); color: #fff;
+  font-size: 15px; font-weight: 600; box-shadow: var(--shadow);
+}
+.analyzeBtn:hover { background: var(--accent-text); }
+
+.apiError {
+  background: var(--danger-bg); border: 1px solid var(--danger-border);
+  border-radius: var(--radius); padding: 14px 16px;
+  font-size: 13px; color: var(--danger); margin-bottom: 12px; line-height: 1.6;
+}
+
+.loadingPage { min-height: 60vh; display: flex; align-items: center; justify-content: center; }
+.loadingBox  { text-align: center; padding: 48px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-xl); max-width: 440px; width: 100%; box-shadow: var(--shadow-lg); }
+.loadSpinner { width: 40px; height: 40px; border: 3px solid var(--border-md); border-top-color: var(--accent); border-radius: 50%; animation: spin .8s linear infinite; margin: 0 auto 20px; }
+.loadMsg     { font-size: 15px; font-weight: 500; color: var(--text); margin-bottom: 16px; min-height: 24px; }
+.loadSources { font-size: 12px; color: var(--text-3); display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 4px; }
+.dot         { width: 6px; height: 6px; background: var(--accent); border-radius: 50%; display: inline-block; margin-right: 4px; }
+
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (max-width: 600px) {
+  .navRow { flex-direction: column; }
+  .analyzeBtn, .nextBtn, .backBtn { width: 100%; text-align: center; }
+}
