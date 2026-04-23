@@ -1,148 +1,148 @@
-# 🏥 MedCheck – AI Drug Interaction Checker
+# 💊 MedCheck - AI Drug Interaction Checker
 
-## 📌 Overview
-
-MedCheck is an AI-powered web application designed to analyze patient data and identify potential drug interactions. It helps users understand possible risks associated with medications by combining clinical inputs with AI-based insights.
-
-This project simulates a basic clinical decision-support system that evaluates medications, vitals, and lab values to provide meaningful recommendations.
-
----
-
-## 🎯 Objectives
-
-* Detect potential drug-drug interactions
-* Analyze patient health parameters
-* Provide AI-based clinical suggestions
-* Build an intuitive healthcare tool
+MedCheck is an AI-powered web application that analyzes patient data, medications, and lab reports to detect potential drug interactions and provide clinical insights.
 
 ---
 
 ## 🚀 Features
 
-* 👤 Add patient details (age, weight, allergies)
-* 💊 Add and manage medications
-* 🧪 Input lab values (HbA1c, Creatinine, etc.)
-* ❤️ Record vital signs (BP, HR)
-* 🤖 AI-powered interaction analysis
-* ⚡ Fast and responsive UI
-* 📋 Clean and structured output
+* 🧠 AI-based drug interaction analysis
+* 💊 Add, update, and remove medications dynamically
+* 📊 Input patient vitals and lab reports
+* ⚠️ Detect harmful drug combinations
+* 📋 Generate structured medical insights
+* 🌐 User-friendly interface
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **Frontend:** React.js, Vite
-* **Language:** JavaScript (ES6)
-* **Styling:** CSS
-* **API:** Groq API (LLM)
-* **Version Control:** Git & GitHub
+* **Frontend:** React (Vite), JavaScript, CSS
+* **Backend/API:** Groq API (LLM-based analysis)
+* **Tools:** Node.js, npm, Git, GitHub
 
 ---
 
 ## 📂 Project Structure
 
-drug-checker/
-│── public/
+```
+MedCheck/
 │── src/
 │   ├── components/
 │   ├── hooks/
 │   ├── services/
-│   ├── App.jsx
-│   ├── main.jsx
+│   ├── styles/
+│── public/
 │── index.html
 │── package.json
-│── README.md
+│── vite.config.js
+```
 
 ---
 
 ## ⚙️ Installation & Setup
 
-### 🔹 Clone the repository
+### 1️⃣ Clone the repository
 
-git clone https://github.com/your-username/medcheck.git
-cd medcheck
+```bash
+git clone https://github.com/ishaankhan9211/MedCheck.git
+cd MedCheck
+```
 
----
+### 2️⃣ Install dependencies
 
-### 🔹 Install dependencies
-
+```bash
 npm install
+```
 
----
+### 3️⃣ Setup environment variables
 
-### 🔹 Setup environment variables
+Create a `.env` file in root folder:
 
-Create a `.env` file and add:
-VITE_GROQ_API_KEY=your_api_key_here
 
-⚠️ Do NOT share your API key publicly.
+### 4️⃣ Run the project
 
----
-
-### 🔹 Run the project
-
+```bash
 npm run dev
-
-👉 Open: http://localhost:5173
+```
 
 ---
 
 ## 🔐 Environment Variables
 
-VITE_GROQ_API_KEY → API key for AI interaction
+| Variable            | Description                 |
+| ------------------- | --------------------------- |
+| `VITE_GROQ_API_KEY` | API key for Groq AI service |
 
 ---
 
-## 🧠 How It Works
+## 🧪 Example Inputs
 
-1. User enters patient details and medications
-2. Data is sent to AI model
-3. AI analyzes drug interactions and health data
-4. Results are displayed in readable format
+* Patient age, weight, gender
+* Symptoms and medical history
+* Current medications
+* Lab values (HbA1c, Creatinine, etc.)
+
+---
 
 
+## 🎯 Use Cases
+
+* Clinical decision support
+* Drug safety analysis
+* Educational tool for students
+* Healthcare assistance
+
+---
 
 ## ⚠️ Disclaimer
 
-This project is for **educational purposes only** and should NOT be used for real medical decisions.
-
----
-
-## 🔮 Future Improvements
-
-* User authentication
-* PDF report generation
-* Better medical dataset
-* Live deployment (Vercel/Netlify)
-
----
-
-## 🐞 Known Issues
-
-* Depends on API response
-* Limited real-world accuracy
-
----
-
-## 🤝 Contributing
-
-1. Fork the repo
-2. Create a branch
-3. Make changes
-4. Submit PR
+This project is for educational purposes only. It should not be used as a substitute for professional medical advice.
 
 ---
 
 ## 👨‍💻 Author
 
-Ishaan Khan
+**Ishaan Khan**
+**Heet Jain**
+B.Tech CSE Students
 
 ---
 
-## 🌟 Support
+## 🤝 Contributing
 
-⭐ Star the repo
-🍴 Fork it
-📢 Share it
+1. Fork the repository
+2. Create a new branch (`feature-name`)
+3. Make changes
+4. Submit a Pull Request
 
 ---
+
+## ⭐ Support
+
+If you like this project:
+
+* ⭐ Star the repository
+* 🍴 Fork it
+* 📢 Share it
+
+---
+
+## 📌 Future Improvements
+
+* Add backend validation
+* Improve AI accuracy
+* Deploy live version
+* Add authentication system
+
+---
+
+## 🌐 Live Demo
+
+*(Add deployment link here if deployed)*
+
+---
+
+## 📜 License
+
+This project is open-source and available under the MIT License.
