@@ -139,7 +139,7 @@ If you like this project:
 
 ## 🌐 Live Demo
 
-*(Add deployment link here if deployed)*
+Live Demo Link: http://med-check-hazel.vercel.app
 
 ---
 
