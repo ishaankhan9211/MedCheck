@@ -1,0 +1,113 @@
+.page { max-width: 880px; margin: 0 auto; }
+.empty { text-align: center; padding: 60px 20px; color: var(--text-2); }
+.startBtn { margin-top: 16px; padding: 10px 24px; background: var(--accent); color: #fff; border-radius: var(--radius); font-weight: 600; }
+
+.hdr { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 16px; flex-wrap: wrap; }
+.title { font-size: 24px; font-weight: 600; letter-spacing: -.02em; margin-bottom: 4px; }
+.meta  { font-size: 13px; color: var(--text-2); }
+
+.newBtn { padding: 9px 18px; border: 1px solid var(--border-md); border-radius: var(--radius); font-size: 13px; font-weight: 600; color: var(--text); background: var(--surface); white-space: nowrap; }
+.newBtn:hover { background: var(--surface2); }
+
+.strip { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
+.aiChip { display: inline-flex; align-items: center; gap: 5px; font-size: 11px; font-weight: 600; color: #f55036; background: rgba(245,80,54,.07); border: 1px solid rgba(245,80,54,.2); border-radius: 20px; padding: 3px 10px; }
+.aiDot  { width: 6px; height: 6px; background: #f55036; border-radius: 50%; display: inline-block; }
+.chip   { font-size: 11px; padding: 3px 9px; border-radius: 20px; background: var(--surface); border: 1px solid var(--border); color: var(--text-2); }
+
+.pills { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+.pill  { font-size: 12px; font-weight: 600; padding: 5px 13px; border-radius: 20px; }
+.pCrit    { background: var(--danger-bg);  color: var(--danger);  border: 1px solid var(--danger-border);  }
+.pMaj     { background: var(--warning-bg); color: var(--warning); border: 1px solid var(--warning-border); }
+.pMod     { background: var(--info-bg);    color: var(--info);    border: 1px solid var(--info-border);    }
+.pMin     { background: var(--success-bg); color: var(--success); border: 1px solid var(--success-border); }
+.pNeutral { background: var(--surface2);   color: var(--text-2);  border: 1px solid var(--border);         }
+.riskLow  { background: var(--success-bg); color: var(--success); border: 1px solid var(--success-border); }
+.riskMod  { background: var(--info-bg);    color: var(--info);    border: 1px solid var(--info-border);    }
+.riskHigh { background: var(--warning-bg); color: var(--warning); border: 1px solid var(--warning-border); }
+.riskCrit { background: var(--danger-bg);  color: var(--danger);  border: 1px solid var(--danger-border);  }
+
+.newDrugNote { background: var(--info-bg); border: 1px solid var(--info-border); border-radius: var(--radius); padding: 12px 16px; font-size: 13px; color: var(--info); margin-bottom: 16px; }
+
+.section    { margin-bottom: 6px; }
+.secHdr     { display: flex; align-items: center; gap: 10px; padding: 12px 0 8px; border-bottom: 1px solid var(--border); margin-bottom: 10px; width: 100%; text-align: left; background: none; }
+.secTitle   { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--text-2); flex: 1; }
+.secCount   { font-size: 11px; background: var(--surface2); border: 1px solid var(--border); border-radius: 10px; padding: 2px 8px; color: var(--text-3); }
+.secChevron { font-size: 10px; color: var(--text-3); }
+.secBody    { padding-bottom: 8px; }
+
+.card { border-radius: var(--radius-lg); padding: 14px 16px; margin-bottom: 10px; border: 1px solid; animation: fadeUp .3s ease both; }
+.sevCritical { background: var(--danger-bg);  border-color: var(--danger-border);  }
+.sevMajor    { background: var(--warning-bg); border-color: var(--warning-border); }
+.sevModerate { background: var(--info-bg);    border-color: var(--info-border);    }
+.sevMinor    { background: var(--success-bg); border-color: var(--success-border); }
+.t_danger    { background: var(--danger-bg);  border-color: var(--danger-border);  }
+.t_warning   { background: var(--warning-bg); border-color: var(--warning-border); }
+.t_info      { background: var(--info-bg);    border-color: var(--info-border);    }
+.allClear    { background: var(--success-bg); border-color: var(--success-border); }
+
+.cardHdr   { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
+.cardTitle { font-size: 14px; font-weight: 600; color: var(--text); flex: 1; min-width: 100px; }
+
+.badge { font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 6px; letter-spacing: .04em; text-transform: uppercase; white-space: nowrap; }
+.bCritical { background: #fecaca; color: #7f1d1d; }
+.bMajor    { background: #fed7aa; color: #7c2d12; }
+.bModerate { background: #bfdbfe; color: #1e3a5f; }
+.bMinor    { background: #bbf7d0; color: #14532d; }
+
+.srcTag { font-size: 10px; padding: 3px 8px; border-radius: 6px; background: var(--surface); border: 1px solid var(--border-md); color: var(--text-3); }
+.labVal { font-size: 12px; color: var(--text-2); margin-left: auto; }
+
+.drugLine { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 6px; }
+.mech     { font-size: 12px; color: var(--text-2); font-style: italic; margin-bottom: 6px; }
+.cardBody { font-size: 13px; color: var(--text-2); line-height: 1.65; margin-bottom: 6px; }
+.patRisk  { font-size: 13px; background: rgba(0,0,0,.04); border-radius: var(--radius-sm); padding: 8px 10px; margin-bottom: 6px; color: var(--text); }
+.action   { font-size: 13px; background: rgba(0,0,0,.04); border-radius: var(--radius-sm); padding: 8px 10px; line-height: 1.6; color: var(--text); }
+
+.doseCompare { display: flex; align-items: center; gap: 12px; font-size: 13px; color: var(--text-2); margin-bottom: 6px; padding: 8px 10px; background: rgba(0,0,0,.04); border-radius: var(--radius-sm); flex-wrap: wrap; }
+.doseArrow   { font-size: 16px; color: var(--warning); }
+
+.schedGrid { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; }
+.slotCol   { background: var(--surface2); border-radius: var(--radius); padding: 12px; min-height: 80px; }
+.slotHdr   { margin-bottom: 10px; }
+.slotName  { display: block; font-size: 12px; font-weight: 700; color: var(--text); text-transform: uppercase; letter-spacing: .06em; }
+.slotTime  { font-size: 11px; color: var(--text-3); }
+.slotEmpty { font-size: 12px; color: var(--text-3); font-style: italic; }
+
+.schedCard    { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 9px 11px; margin-bottom: 8px; }
+.schedPatient { border-color: var(--accent); }
+.patBadge     { font-size: 9px; font-weight: 700; background: var(--accent-light); color: var(--accent-text); padding: 2px 6px; border-radius: 4px; letter-spacing: .04em; display: inline-block; margin-bottom: 4px; }
+.schedDrug    { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 3px; }
+.schedDose    { font-weight: 400; font-size: 12px; color: var(--text-2); }
+.schedDet     { font-size: 11px; color: var(--text-2); margin-bottom: 2px; line-height: 1.5; }
+.schedSpec    { font-size: 11px; color: var(--warning); margin-top: 3px; }
+.schedMissed  { font-size: 11px; color: var(--text-3); margin-top: 4px; line-height: 1.4; }
+
+.disclaimer { background: var(--warning-bg); border: 1px solid var(--warning-border); border-radius: var(--radius); padding: 14px 18px; font-size: 12px; color: var(--warning); line-height: 1.65; margin-top: 24px; }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 700px) { .schedGrid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 440px) { .schedGrid { grid-template-columns: 1fr; } }
+
+.pdfBtn {
+  padding: 9px 16px;
+  background: var(--accent-light);
+  color: var(--accent-text);
+  border: 1px solid rgba(26,92,58,0.2);
+  border-radius: var(--radius);
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.pdfBtn:hover:not(:disabled) { background: var(--accent); color: #fff; }
+.pdfBtn:disabled { opacity: 0.5; }
+
+.histBtn {
+  padding: 9px 16px;
+  border: 1px solid var(--border-md);
+  border-radius: var(--radius);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-2);
+  background: var(--surface);
+}
+.histBtn:hover { background: var(--surface2); }
