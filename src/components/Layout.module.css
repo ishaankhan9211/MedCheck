@@ -1,0 +1,118 @@
+.root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.headerInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: -0.02em;
+}
+
+.logo:hover { opacity: 0.8; }
+
+.nav {
+  display: flex;
+  gap: 4px;
+}
+
+.navLink, .navActive {
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-2);
+  transition: all var(--transition);
+}
+
+.navLink:hover { background: var(--surface2); color: var(--text); }
+
+.navActive {
+  background: var(--accent-light);
+  color: var(--accent-text);
+}
+
+.main {
+  flex: 1;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 16px 24px;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 12px;
+  color: var(--text-3);
+}
+
+@media (max-width: 600px) {
+  .headerInner { padding: 0 16px; }
+  .main { padding: 20px 16px; }
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.groqBadge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: var(--text-3);
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 4px 12px;
+  white-space: nowrap;
+}
+
+.groqDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #f55036;
+  display: inline-block;
+  animation: groqPulse 2s infinite;
+}
+
+@keyframes groqPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.right { display:flex; align-items:center; gap:16px; }
+.groqBadge { display:flex; align-items:center; gap:5px; font-size:11px; color:var(--text-3); background:var(--surface2); border:1px solid var(--border); border-radius:20px; padding:4px 12px; white-space:nowrap; }
+.groqDot   { width:6px; height:6px; border-radius:50%; background:#f55036; display:inline-block; animation:groqPulse 2s infinite; }
+@keyframes groqPulse { 0%,100%{opacity:1} 50%{opacity:.4} }

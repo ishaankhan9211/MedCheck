@@ -90,3 +90,4 @@ npm run dev
 - Groq Vision prescription photo scanner
 - Manual dose/timing editor per drug
 - Email/password authentication (Supabase Auth)
+
